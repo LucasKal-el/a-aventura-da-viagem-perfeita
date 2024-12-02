@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>A viagem Perfeita</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.png" alt="">
+            <p>Você foi selecionado(a) para o programa "Em Busca da Viagem Perfeita", e terá dois possiveis destinos, um deles internacional e outro nacional. Porém, a escolha deverá ser feita sem o conhecimento prévio da cidade. </p>
+            <button class="btn-proximo" data-proximo="1">Nacional</button>
+            <button class="btn-proximo" data-proximo="2">Internacional</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>Nacional, perfeito. O seu destino será a Cidade Maravilhosa, Rio de Janeiro. Por favor, selecione a melhor época do ano: </p>
+            <button class="btn-proximo" data-proximo="3">Verão</button>
+            <button class="btn-proximo" data-proximo="4">Inverno</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>Internacional, perfeito. O seu destino será a Cidade Luz, Paris. Por favor, selecione a melhor época do ano: </p>
+            <button class="btn-proximo" data-proximo="5">Outono</button>
+            <button class="btn-proximo" data-proximo="6">Primavera</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Ah o verão carioca, perfeito. Certo, precisamos decidir o melhor é buscar um café temático na cidade ou apenas aproveitar o serviço do hotel e ir correndo para praia em seguida: </p>
+            <button class="btn-proximo" data-proximo="7">Café</button>
+            <button class="btn-proximo" data-proximo="8">Praia</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Ah, o Inverno no Rio, que escolha interessante! Você pod optar por tomar o café no hotel ou conheçer a Confeitaria Colombo, no centro antigo da cidade: </p>
+            <button class="btn-proximo" data-proximo="9">Hotel</button>
+            <button class="btn-proximo" data-proximo="10">Confeitaria</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>O outono parisiense... A aura magica que cobre a cidade te convida para a rua cedo. Uma pausa prolongada pra o café, ou tomar rapido para explorar a cidade logo cedo? </p>
+            <button class="btn-proximo" data-proximo="11">Ir com calma</button>
+            <button class="btn-proximo" data-proximo="12">Explorar logo</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Ok, primavera, a estação das flores. Os campos de Paris te chamam para um passeio. Qual deles você deve conhecer primeiro: </p>
+            <button class="btn-proximo" data-proximo="13">Jardim de Tuileries</button>
+            <button class="btn-proximo" data-proximo="14">Campo de Marte</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>ok, depois do café no hotel, a praia é obrigatória nesse verão. Mas chegando o horário de almoço, você pode querer ir a um restaurante ou almoçar em um quiosque na praia: </p>
+            <button class="btn-proximo" data-proximo="15">Restaurante</button>
+            <button class="btn-proximo" data-proximo="16">Quiosque</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Ir para a praia cedo tem suas vantagens, mas a fome ainda persiste. Por sorte as praias cariocas são conhecidas por oferecer vendedores ambulantes com uma variedade de alimentos. Mas chegando o horário de almoço, você pode querer ir a um restaurante ou almoçar em um quiosque na praia: </p>
+            <button class="btn-proximo" data-proximo="15">Restaurante</button>
+            <button class="btn-proximo" data-proximo="16">Quiosque</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Depois de um excelente café da manhã no hotel, a ciadade maravilhosa continua oferecendo um roteiro variado, ainda que em dias de chuva. São apresentados dois folhetos de museus para visitar ainda hoje, qual você escolhe? </p>
+            <button class="btn-proximo" data-proximo="17">Museu de Arte do Rio, o MAR</button>
+            <button class="btn-proximo" data-proximo="18">Museu de Arte Moderna, o MAM</button>
+        </div>        
+        <div class="passo" id="passo-10">
+            <p>Depois de um excelente café da manhã numa confeitaria histórica, a ciadade maravilhosa continua oferecendo um roteiro variado, ainda que em dias de chuva. São apresentados duas opções de lugares com exposições temáticas para visitar ainda hoje, qual você escolhe? </p>
+            <button class="btn-proximo" data-proximo="19">Centro cultural Banco do Brasil</button>
+            <button class="btn-proximo" data-proximo="20">Casa França/Brasil</button>
+        </div>        
+        <div class="passo" id="passo-11">
+            <p>Depois de um excelente café à beira do Sena, você recebe um convite para uma visita rapida às instalações de uma importante griffe de moda mundial. Qual você escolheria: </p>
+            <button class="btn-proximo" data-proximo="21">Dior</button>
+            <button class="btn-proximo" data-proximo="22">Channel</button>
+        </div>        
+        <div class="passo" id="passo-12">
+            <p>Depois de um excelente café expresso, você corre para visitar uma importante igeja no centro da ciadade: </p>
+            <button class="btn-proximo" data-proximo="23">Catedral de Notre Dame</button>
+            <button class="btn-proximo" data-proximo="24">Igreja de Saint Sulpice</button>
+        </div>        
+        <div class="passo" id="passo-13">
+            <p>Depois de dar uma volta nos jardins, é hora de conhecer um marco da cidade: </p>
+            <button class="btn-proximo" data-proximo="25">Torre Eiffel</button>
+            <button class="btn-proximo" data-proximo="26">Museu do Louvre</button>
+        </div>        
+        <div class="passo" id="passo-14">
+            <p>Depois de dar uma volta nos jardins, é hora de conhecer um marco da cidade: </p>
+            <button class="btn-proximo" data-proximo="25">Torre Eiffel</button>
+            <button class="btn-proximo" data-proximo="26">Museu do Louvre</button>
+        </div>        
+        <div class="passo" id="passo-15">
+            <p>Depois do almoço, é hora de conhecer um marco da cidade: </p>
+            <button class="btn-proximo" data-proximo="27">Cristo Redentor</button>
+            <button class="btn-proximo" data-proximo="28">Pão de Açúcar</button>
+        </div>        
+        <div class="passo" id="passo-16">
+            <p>Depois do almoço, é hora de conhecer um marco da cidade: </p>
+            <button class="btn-proximo" data-proximo="27">Cristo Redentor</button>
+            <button class="btn-proximo" data-proximo="28">Pão de Açúcar</button>
+        </div>        
+        <div class="passo" id="passo-17">
+            <p>Depois do almoço num restaurante próximo ao Museu, é hora de conhecer um acervo histórico da cidade: </p>
+            <button class="btn-proximo" data-proximo="29">Real Gabinete Português de Literatura</button>
+            <button class="btn-proximo" data-proximo="30">Biblioteca Nacional</button>
+        </div>        
+        <div class="passo" id="passo-18">
+            <p>Depois do almoço num restaurante próximo ao Museu, é hora de conhecer um acervo histórico da cidade: </p>
+            <button class="btn-proximo" data-proximo="29">Real Gabinete Português de Literatura</button>
+            <button class="btn-proximo" data-proximo="30">Biblioteca Nacional</button>
+        </div>        
+        <div class="passo" id="passo-19">
+            <p>Depois do almoço num restaurante próximo ao centro cultural, é hora de conhecer um acervo histórico da cidade: </p>
+            <button class="btn-proximo" data-proximo="29">Real Gabinete Português de Literatura</button>
+            <button class="btn-proximo" data-proximo="30">Biblioteca Nacional</button>
+        </div>        
+        <div class="passo" id="passo-20">
+            <p>Depois do almoço num restaurante próximo ao centro cultural, é hora de conhecer um acervo histórico da cidade: </p>
+            <button class="btn-proximo" data-proximo="29">Real Gabinete Português de Literatura</button>
+            <button class="btn-proximo" data-proximo="30">Biblioteca Nacional</button>
+        </div>        
+        <div class="passo" id="passo-21">
+            <p>Depois do almoço num restaurante próximo ao atelie da griffe, é hora de escolher entre história e compras: </p>
+            <button class="btn-proximo" data-proximo="31">Museu D'orsay</button>
+            <button class="btn-proximo" data-proximo="32">Champs-Élysées</button>
+        </div>        
+        <div class="passo" id="passo-22">
+            <p>Depois do almoço num restaurante próximo ao atelie da griffe, é hora de escolher entre história e compras: </p>
+            <button class="btn-proximo" data-proximo="31">Museu D'orsay</button>
+            <button class="btn-proximo" data-proximo="32">Champs-Élysées</button>
+        </div>    
+        <div class="passo" id="passo-23">
+            <p>Depois do almoço num restaurante próximo a igreja, é hora de escolher entre história e compras: </p>
+            <button class="btn-proximo" data-proximo="31">Museu D'orsay</button>
+            <button class="btn-proximo" data-proximo="32">Champs-Élysées</button>
+        </div>    
+        <div class="passo" id="passo-24">
+            <p>Depois do almoço num restaurante próximo a igreja, é hora de escolher entre história e compras: </p>
+            <button class="btn-proximo" data-proximo="31">Museu D'orsay</button>
+            <button class="btn-proximo" data-proximo="32">Champs-Élysées</button>
+        </div>   
+        <div class="passo" id="passo-25">
+            <p>Como é uma atração que demanda mais tempo, vocÊ pode almoçar por lá e ainda aproveitar o turno da tarde no mesmo lugar. Agora é hora de escolher onde aproveitar a noite: </p>
+            <button class="btn-proximo" data-proximo="37">Ópera</button>
+            <button class="btn-proximo" data-proximo="38">Bares de Montmartre</button>
+        </div>   
+        <div class="passo" id="passo-26">
+            <p>Como é uma atração que demanda mais tempo, vocÊ pode almoçar por lá e ainda aproveitar o turno da tarde no mesmo lugar. Agora é hora de escolher onde aproveitar a noite: </p>
+            <button class="btn-proximo" data-proximo="37">Ópera</button>
+            <button class="btn-proximo" data-proximo="38">Bares de Montmartre</button>
+        </div>   
+        <div class="passo" id="passo-27">
+            <p>Depois de ter uma excelente vista da cidade maravilhosa, agora é hora de escolher onde aproveitar a noite: </p>
+            <button class="btn-proximo" data-proximo="33">Pedra do Sal, Gamboa</button>
+            <button class="btn-proximo" data-proximo="34">Arcos da Lapa</button>
+        </div>   
+        <div class="passo" id="passo-28">
+            <p>Depois de ter uma excelente vista da cidade maravilhosa, agora é hora de escolher onde aproveitar a noite: </p>
+            <button class="btn-proximo" data-proximo="33">Pedra do Sal, Gamboa</button>
+            <button class="btn-proximo" data-proximo="34">Arcos da Lapa</button>
+        </div>   
+        <div class="passo" id="passo-29">
+            <p>Depois de conheçer verdadeiros monumentos da história, é hora de saber como fechar a noite com chave de ouro. Assistir a uma peça em um evento de gala, ou o conforto de um cienma mais simples.</p>
+            <button class="btn-proximo" data-proximo="35">Teatro Municipal</button>
+            <button class="btn-proximo" data-proximo="36">Cinema</button>
+        </div>   
+        <div class="passo" id="passo-30">
+            <p>Depois de conheçer verdadeiros monumentos da história, é hora de saber como fechar a noite com chave de ouro. Assistir a uma peça em um evento de gala, ou o conforto de um cienma mais simples.</p>
+            <button class="btn-proximo" data-proximo="35">Teatro Municipal</button>
+            <button class="btn-proximo" data-proximo="36">Cinema</button>
+        </div>   
+        <div class="passo" id="passo-31">
+            <p>Depois do anoitecer, é hora de saber como fechar a noite com chave de ouro. Assistir a uma peça em um evento de gala, ou o a energia romantica de Montmartre.</p>
+            <button class="btn-proximo" data-proximo="37">Ópera</button>
+            <button class="btn-proximo" data-proximo="38">Bares de Montmartre</button>
+        </div>   
+        <div class="passo" id="passo-32">
+            <p>Depois do anoitecer, é hora de saber como fechar a noite com chave de ouro. Assistir a uma peça em um evento de gala, ou o a energia romantica de Montmartre.</p>
+            <button class="btn-proximo" data-proximo="37">Ópera</button>
+            <button class="btn-proximo" data-proximo="38">Bares de Montmartre</button>
+        </div>   
+        <div class="passo" id="passo-33">
+            <p>Depois da animação da noite carioca, só nos resta descansar.</p>
+            <button class="btn-proximo" data-proximo="39">Voltar para o hotel</button>
+        </div>   
+        <div class="passo" id="passo-34">
+            <p>Depois da animação da noite carioca, só nos resta descansar.</p>
+            <button class="btn-proximo" data-proximo="39">Voltar para o hotel</button>
+        </div>   
+        <div class="passo" id="passo-35">
+            <p>Depois do espetáculo no Teatro, só nos resta descansar.</p>
+            <button class="btn-proximo" data-proximo="39">Voltar para o hotel</button>
+        </div>   
+        <div class="passo" id="passo-36">
+            <p>Depois de relaxar com o filme, só nos resta descansar.</p>
+            <button class="btn-proximo" data-proximo="39">Voltar para o hotel</button>
+        </div>   
+        <div class="passo" id="passo-37">
+            <p>Depois do espetáculo de gala, só nos resta descansar.</p>
+            <button class="btn-proximo" data-proximo="39">Voltar para o hotel</button>
+        </div>   
+        <div class="passo" id="passo-38">
+            <p>Depois da romantica noite parisiense, só nos resta descansar.</p>
+            <button class="btn-proximo" data-proximo="39">Voltar para o hotel</button>
+        </div>   
+        <div class="passo" id="passo-39">
+            <img src="cenario-passo39.png" alt="">
+            <p>Finalmente descansando, obrigado por seguir nesta aventura conosco e montar o seu dia perfeito na sua viagem dos sonhos.</p>
+            <button class="btn-proximo" data-proximo="0">Retornar para o início</button>
+        </div>   
+
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
